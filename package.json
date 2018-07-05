@@ -1,0 +1,28 @@
+{
+  "name": "merge-svg-files",
+  "version": "1.0.0",
+  "description": "Merge multiple SVG files into single SVG file with IDs",
+  "main": "index.js",
+  "bin": {
+    "merge-svg-files": "index.js"
+  },
+  "author": "Phil Tsarik",
+  "license": "MIT",
+  "dependencies": {
+    "htmlclean": "^3.0.8",
+    "shelljs": "^0.8.2",
+    "svgstore": "^2.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phts/merge-svg-files.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phts/merge-svg-files/issues"
+  },
+  "homepage": "https://github.com/phts/merge-svg-files#readme",
+  "keywords": [
+    "svg"
+  ]
+}
