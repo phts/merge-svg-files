@@ -1,7 +1,7 @@
 {
   "name": "merge-svg-files",
   "version": "1.0.0",
-  "description": "Merge multiple SVG files into single SVG file with IDs",
+  "description": "Merge multiple SVG files into single SVG file with symbols",
   "main": "index.js",
   "bin": {
     "merge-svg-files": "index.js"

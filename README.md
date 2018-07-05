@@ -1,6 +1,6 @@
 # merge-svg-files
 
-Merge multiple SVG files into single SVG file with IDs
+Merge multiple SVG files into single SVG file with symbols.
 
 ## Install
 
