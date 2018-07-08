@@ -1,5 +1,7 @@
 # merge-svg-files
 
+[![npm](https://img.shields.io/npm/v/merge-svg-files.svg)](https://www.npmjs.com/package/merge-svg-files)
+
 Merge multiple SVG files into single SVG file with symbols.
 
 ## Install
