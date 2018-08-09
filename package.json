@@ -6,6 +6,9 @@
   "bin": {
     "merge-svg-files": "index.js"
   },
+  "scripts": {
+    "lint": "eslint . --"
+  },
   "author": "Phil Tsarik",
   "license": "MIT",
   "dependencies": {
@@ -13,7 +16,10 @@
     "shelljs": "^0.8.2",
     "svgstore": "^2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@phts/eslint-config": "^1.0.0",
+    "eslint": "^5.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phts/merge-svg-files.git"
