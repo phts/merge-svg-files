@@ -1,5 +1,15 @@
 #!/usr/bin/env node
 
+const argv = require('yargs')
+  .usage('Usage: $0 [options]')
+  .option('support-embed', {
+    default: false,
+    describe: 'Generate svg file which could be used in <embed .../>',
+  })
+  .help('h')
+  .alias('h', 'help')
+  .argv
+
 const svgstore = require('svgstore')
 const htmlclean = require('htmlclean')
 const sh = require('shelljs')
@@ -21,7 +31,14 @@ files.forEach(file => {
   sprites.add(id, contents)
 })
 
-const outputFile = path.join(cwd, OUTPUT_FILE_NAME)
-fs.writeFileSync(outputFile, htmlclean(sprites.toString()))
+let output = htmlclean(sprites.toString())
 
-console.info('Merged %s files to %s', files.length, outputFile)
+if (argv.supportEmbed) {
+  const style = '<style>:target{display:block}</style>'
+  output = output.replace(/^(<\?xml[^>]*\?>[\w]*<!DOCTYPE[^>]*>[\w]*<svg[^>]*>)/i, `$1${style}`)
+}
+
+const outputFile = path.join(cwd, OUTPUT_FILE_NAME)
+fs.writeFileSync(outputFile, output)
+
+console.info('Merged %s files into %s', files.length, outputFile)

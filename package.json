@@ -14,7 +14,8 @@
   "dependencies": {
     "htmlclean": "^3.0.8",
     "shelljs": "^0.8.2",
-    "svgstore": "^2.0.3"
+    "svgstore": "^2.0.3",
+    "yargs": "^12.0.1"
   },
   "devDependencies": {
     "@phts/eslint-config": "^1.0.0",
