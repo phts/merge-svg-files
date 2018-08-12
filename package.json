@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint . --"
   },
-  "author": "Phil Tsarik",
+  "author": "Phil Tsaryk",
   "license": "MIT",
   "dependencies": {
     "htmlclean": "^3.0.8",
